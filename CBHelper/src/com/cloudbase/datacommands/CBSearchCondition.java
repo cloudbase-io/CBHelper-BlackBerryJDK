@@ -264,7 +264,11 @@ public class CBSearchCondition extends CBDataAggregationCommand implements CBHel
 	    		output.put(this.getField(), this.value.toString());
 	    	}
 		    if (this.getOperator() == CBSearchConditionOperator.CBOperatorAll || 
-		        	this.getOperator() == CBSearchConditionOperator.CBOperatorExists || 
+		        	this.getOperator() == CBSearchConditionOperator.CBOperatorExists ||
+		        	this.getOperator() == CBSearchConditionOperator.CBOperatorBigger ||
+		        	this.getOperator() == CBSearchConditionOperator.CBOperatorBiggerOrEqual ||
+		        	this.getOperator() == CBSearchConditionOperator.CBOperatorLess ||
+		        	this.getOperator() == CBSearchConditionOperator.CBOperatorLessOrEqual ||
 		        	this.getOperator() == CBSearchConditionOperator.CBOperatorNe ||
 		        	this.getOperator() == CBSearchConditionOperator.CBOperatorIn || 
 		        	this.getOperator() == CBSearchConditionOperator.CBOperatorNin || 
