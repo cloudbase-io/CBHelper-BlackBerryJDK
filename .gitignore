@@ -1,9 +1,8 @@
 *.class
+.metadata
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
-.DS_Store
 .DS_Store
